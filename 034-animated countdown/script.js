@@ -14,14 +14,14 @@ const runAnimation = () => {
   nums.forEach((num, index) => {
     const nextToLast = nums.length - 1;
     num.addEventListener("animationend", (e) => {
-      if (e.animationName === "goIn" && index !== nextToLast) {
+      if (e.animationName === "goIn" && index !== nast) {
         num.classList.remove("in");
         num.classList.add("out");
-      } else if (e.animationName === "goOut" && num.nextElementSibling) {
+      } else if (e.animationName === "goOut" && num.nextElementSibli
         num.nextElementSibling.classList.add("in");
       } else {
         counter.classList.add("hide");
-        finalMessage.classList.add("show");
+        finalMessage.classList.add("
       }
     });
   });
